@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Echo\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj": {}
+    "C:\\Users\\garra\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Echo\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\garra\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj": {
+      "version": "1.2.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Echo\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj",
+        "projectUniqueName": "C:\\Users\\garra\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj",
         "projectName": "BinaryFuncs",
-        "projectPath": "C:\\Users\\Echo\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj",
-        "packagesPath": "C:\\Users\\Echo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Echo\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\obj\\",
+        "projectPath": "C:\\Users\\garra\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\BinaryFuncs.csproj",
+        "packagesPath": "C:\\Users\\garra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garra\\OneDrive - NCG\\Computer Science\\BinaryFuncs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Echo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\garra\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

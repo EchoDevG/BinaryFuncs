@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>BinaryFuncs</id>
-    <version>1.0.0</version>
+    <version>1.2.0</version>
     <title>Binary Functions</title>
     <authors>EchoDevG</authors>
     <license type="expression">MIT</license>
@@ -10,8 +10,8 @@
     <icon>BinaryFuncsLogo.png</icon>
     <readme>BinaryFuncsDocs.md</readme>
     <projectUrl>https://github.com/EchoDevG/BinaryFuncs</projectUrl>
-    <description>A class libary providing different types of 8 bit binary numbers, and various functions for them.</description>
-    <releaseNotes>Innitial release</releaseNotes>
+    <description>A class libary providing different types of binary numbers, and various functions for them.</description>
+    <releaseNotes>Added new experimental EBinary class, combining different formats of binary numbers into one class</releaseNotes>
     <tags>binary C#</tags>
     <repository type="git" url="https://github.com/EchoDevG/BinaryFuncs" />
     <dependencies>

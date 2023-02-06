@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,19 +7,28 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>BinaryFuncs</PackageId>
     <Title>Binary Functions</Title>
-    <Version>1.0.0</Version>
+    <Version>1.2.0</Version>
     <Authors>EchoDevG</Authors>
-    <Description>A class libary providing different types of 8 bit binary numbers, and various functions for them.</Description>
+    <Description>A class libary providing different types of binary numbers, and various functions for them.</Description>
     <PackageIcon>BinaryFuncsLogo.png</PackageIcon>
     <PackageProjectUrl>https://github.com/EchoDevG/BinaryFuncs</PackageProjectUrl>
     <RepositoryUrl>https://github.com/EchoDevG/BinaryFuncs</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>binary;C#</PackageTags>
-    <PackageReleaseNotes>Innitial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Added new experimental EBinary class, combining different formats of binary numbers into one class</PackageReleaseNotes>
     <PackageOutputPath>bin\Debug\</PackageOutputPath>
     <PackageReadmeFile>BinaryFuncsDocs.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BinaryFuncsTesting\**" />
+    <Compile Remove="TestingBinaryFuncs\**" />
+    <EmbeddedResource Remove="BinaryFuncsTesting\**" />
+    <EmbeddedResource Remove="TestingBinaryFuncs\**" />
+    <None Remove="BinaryFuncsTesting\**" />
+    <None Remove="TestingBinaryFuncs\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\BinaryFuncsDocs.md">
