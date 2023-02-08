@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RBBMj0/VggmGteStFQphzRb0C5XhcbNxVvBlkvdlazIYangAvnS+Blv0WbBjxhGL5rW8jjtF7vMraut9oBlsoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\garra\\OneDrive - NCG\\Computer Science\\C# programs\\BinaryFuncsTesting\\BinaryFuncsTesting\\BinaryFuncsTesting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\garra\\.nuget\\packages\\binaryfuncs\\1.1.0\\binaryfuncs.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

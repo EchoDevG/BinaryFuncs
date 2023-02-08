@@ -1,0 +1,17 @@
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.csproj.AssemblyReference.cache
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.AssemblyInfoInputs.cache
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.AssemblyInfo.cs
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.csproj.CoreCompileInputs.cache
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\bin\Debug\net6.0\BinaryFuncsTesting.exe
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\bin\Debug\net6.0\BinaryFuncsTesting.deps.json
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\bin\Debug\net6.0\BinaryFuncsTesting.runtimeconfig.json
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\bin\Debug\net6.0\BinaryFuncsTesting.dll
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\bin\Debug\net6.0\BinaryFuncsTesting.pdb
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\bin\Debug\net6.0\BinaryFuncs.dll
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.csproj.CopyComplete
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.dll
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\refint\BinaryFuncsTesting.dll
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.pdb
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\BinaryFuncsTesting.genruntimeconfig.cache
+C:\Users\garra\OneDrive - NCG\Computer Science\C# programs\BinaryFuncsTesting\BinaryFuncsTesting\obj\Debug\net6.0\ref\BinaryFuncsTesting.dll
