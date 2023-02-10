@@ -19,8 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\garra\OneDrive - NCG\Computer Science\BinaryFuncs\bin\Debug\net6.0\BinaryFuncs.dll" target="lib\net6.0\BinaryFuncs.dll" />
-    <file src="C:\Users\garra\OneDrive - NCG\Computer Science\BinaryFuncsDocs.md" target="\BinaryFuncsDocs.md" />
-    <file src="C:\Users\garra\OneDrive - NCG\Computer Science\BinaryFuncsLogo.png" target="\BinaryFuncsLogo.png" />
+    <file src="C:\Users\garra\Documents\GitHub\BinaryFuncs\bin\Debug\net6.0\BinaryFuncs.dll" target="lib\net6.0\BinaryFuncs.dll" />
   </files>
 </package>
