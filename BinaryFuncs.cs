@@ -58,10 +58,10 @@ namespace BinaryFuncs
 
     }
 
-#endregion
+    #endregion
 
 
-#region child classes
+    #region child classes
 
 
     public class SignAndMagnitudeBinary : Binary
@@ -264,8 +264,12 @@ namespace BinaryFuncs
         public string Type
         {
             get { return type; }
-            set { if (value.ToUpper() == "TWOS_COMPLIMENT" || value.ToUpper() == "SIGN_MAGNITUDE" || value.ToUpper() == "STANDARD") 
-                { type = value.ToUpper(); } else { type = "STANDARD"; } }
+            set
+            {
+                if (value.ToUpper() == "TWOS_COMPLIMENT" || value.ToUpper() == "SIGN_MAGNITUDE" || value.ToUpper() == "STANDARD")
+                { type = value.ToUpper(); }
+                else { type = "STANDARD"; }
+            }
 
         }
 
@@ -284,7 +288,7 @@ namespace BinaryFuncs
                     SetBinaryWithDenaryStandard(denary);
                     break;
                 case "TWOS_COMPLIMENT":
-                   setBinaryWithDenaryTwosCompliment(denary);
+                    SetBinaryWithDenaryTwosCompliment(denary);
                     break;
                 case "SIGN_MAGNITUDE":
                     setBinaryWithDenarySignAndMagnitude(denary);
@@ -295,16 +299,16 @@ namespace BinaryFuncs
             }
         }
 
-
         private bool SetBinaryWithDenaryStandard(int denary)
         {
             //if it will fit in an 8 bit number
-            if (denary >= 0 &&denary < Math.Pow(2, Length))
+            if (denary >= 0 && denary < Math.Pow(2, Length))
             {
 
                 string outputBinary = "";
 
                 int currentPower = Length - 1;
+
 
                 //find the binary
                 while (currentPower >= 0)
@@ -330,52 +334,45 @@ namespace BinaryFuncs
         }
 
 
-        private bool setBinaryWithDenaryTwosCompliment(int denary)
+        private bool SetBinaryWithDenaryTwosCompliment(int denary)
         {
-            //if it will fit in an 8 bit sign and magnitude number
             if (denary >= -(Math.Pow(2, Length - 1)) && denary <= (Math.Pow(2, Length - 1) - 1))
             {
-
                 string outputBinary = "";
                 bool isNegative = false;
 
                 if (denary < 0)
                 {
                     isNegative = true;
-                    denary = Math.Abs(denary);
-                    denary = (int)Math.Pow(2,Length) - denary;
-                }
-                else
-                {
-                    denary = Math.Abs(denary);
+                    denary = (int)(Math.Pow(2, Length) - Math.Abs(denary));
                 }
 
-                int currentPower = Length-2;
+                int currentPower = Length - 1;
 
-                //find the binary
                 while (currentPower >= 0)
                 {
-                    if ((denary - Math.Pow(2, currentPower) >= 0))
+                    if (denary >= Math.Pow(2, currentPower))
                     {
-                        outputBinary += "1";
+                        outputBinary = "1" + outputBinary;
                         denary -= (int)Math.Pow(2, currentPower);
-                        currentPower -= 1;
                     }
                     else
                     {
-                        outputBinary += "0";
-                        currentPower -= 1;
+                        outputBinary = "0" + outputBinary;
                     }
-
+                    currentPower--;
                 }
 
-                if (isNegative == true) { outputBinary = "1" + outputBinary; } else { outputBinary = "0" + outputBinary; }
+                BinaryNum = isNegative ? "1" + outputBinary : "0" + outputBinary;
 
-                BinaryNum = outputBinary;
                 return true;
             }
-            else { return false; }
+            else
+            {
+                return false;
+            }
         }
+
 
 
 
@@ -383,7 +380,7 @@ namespace BinaryFuncs
         private bool setBinaryWithDenarySignAndMagnitude(int denary)
         {
             //if it will fit in an 8 bit sign and magnitude number
-            if (denary >= -(Math.Pow(2, Length - 1) - 1) && denary <= (Math.Pow(2,Length-1)-1))
+            if (denary >= -(Math.Pow(2, Length - 1) - 1) && denary <= (Math.Pow(2, Length - 1) - 1))
             {
 
                 string outputBinary = "";
@@ -421,9 +418,67 @@ namespace BinaryFuncs
             else { return false; }
         }
 
+
+
+        private int GetDenaryStandard()
+        {
+            int outputDenary = 0;
+
+            for (int i = Length - 1; i >= 0; i--)
+            {
+                if (BinaryNum.Substring(i, 1) == "1")
+                {
+                    outputDenary += (int)Math.Pow(2, Length - (1 + i));
+                }
+            }
+            return outputDenary;
+        }
+
+        //incomplete \/ \/ \/
+        private int GetDenaryTwosCompliment()
+        {
+            int outputDenary = 0;
+
+            for (int i = Length - 1; i >= 1; i--)
+            {
+                if (BinaryNum.Substring(i, 1) == "1")
+                {
+                    outputDenary += (int)Math.Pow(2, Length - (1 + i));
+                }
+            }
+
+            if (BinaryNum.Substring(0, 1) == "1")
+            {
+                outputDenary = outputDenary - (int)Math.Pow(2, Length - 1);
+            }
+
+
+            return outputDenary;
+        }
+
+
+        private int GetDenarySignAndMagnitude()
+        {
+            int outputDenary = 0;
+
+            for (int i = Length - 1; i >= 1; i--)
+            {
+                if (BinaryNum.Substring(i, 1) == "1")
+                {
+                    outputDenary += (int)Math.Pow(2, Length - (1 + i));
+                }
+            }
+
+            if (BinaryNum.Substring(0, 1) == "1")
+            {
+                outputDenary = outputDenary * -1;
+            }
+
+
+            return outputDenary;
+        }
     }
+}
     
 
     #endregion
-
-}
