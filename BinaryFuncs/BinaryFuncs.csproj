@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>BinaryFuncs</PackageId>
+    <Title>Binary Functions</Title>
+    <Version>1.2.1</Version>
+    <Authors>EchoDevG</Authors>
+    <Description>A class libary providing different types of binary numbers, and various functions for them.</Description>
+    <PackageIcon>BinaryFuncsLogo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/EchoDevG/BinaryFuncs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/EchoDevG/BinaryFuncs</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>binary;C#</PackageTags>
+    <PackageReleaseNotes>Fixed error with EBinary setting with denary</PackageReleaseNotes>
+    <PackageOutputPath>bin\Debug\</PackageOutputPath>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BinaryFuncsTesting\**" />
+    <Compile Remove="TestingBinaryFuncs\**" />
+    <EmbeddedResource Remove="BinaryFuncsTesting\**" />
+    <EmbeddedResource Remove="TestingBinaryFuncs\**" />
+    <None Remove="BinaryFuncsTesting\**" />
+    <None Remove="TestingBinaryFuncs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BinaryFuncsLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
