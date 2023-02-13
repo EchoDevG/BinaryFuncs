@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>BinaryFuncs</PackageId>
     <Title>Binary Functions</Title>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <Authors>EchoDevG</Authors>
     <Description>A class libary providing different types of binary numbers, and various functions for them.</Description>
     <PackageIcon>BinaryFuncsLogo.png</PackageIcon>
@@ -15,9 +15,9 @@
     <RepositoryUrl>https://github.com/EchoDevG/BinaryFuncs</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>binary;C#</PackageTags>
-    <PackageReleaseNotes>Added new experimental EBinary class, combining different formats of binary numbers into one class</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed error with EBinary setting with denary</PackageReleaseNotes>
     <PackageOutputPath>bin\Debug\</PackageOutputPath>
-    <PackageReadmeFile>BinaryFuncsDocs.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
@@ -28,6 +28,17 @@
     <EmbeddedResource Remove="TestingBinaryFuncs\**" />
     <None Remove="BinaryFuncsTesting\**" />
     <None Remove="TestingBinaryFuncs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="BinaryFuncsLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
