@@ -187,7 +187,6 @@ namespace BinaryFuncs
                         outputBinary += "0";
                         currentPower -= 1;
                     }
-
                 }
 
                 if (isNegative == true) { outputBinary = "1" + outputBinary; } else { outputBinary = "0" + outputBinary; }
@@ -301,7 +300,7 @@ namespace BinaryFuncs
 
         private bool SetBinaryWithDenaryStandard(int denary)
         {
-            //if it will fit in an 8 bit number
+            //if it will fit in a binary number
             if (denary >= 0 && denary < Math.Pow(2, Length))
             {
 
@@ -336,6 +335,7 @@ namespace BinaryFuncs
 
         private bool SetBinaryWithDenaryTwosCompliment(int denary)
         {
+            
             if (denary >= -(Math.Pow(2, Length - 1)) && denary <= (Math.Pow(2, Length - 1) - 1))
             {
                 string outputBinary = "";
@@ -344,40 +344,46 @@ namespace BinaryFuncs
                 if (denary < 0)
                 {
                     isNegative = true;
-                    denary = (int)(Math.Pow(2, Length) - Math.Abs(denary));
+                    denary = Math.Abs(denary);
+                    denary = (int)(Math.Pow(2, Length -1) - denary);
                 }
 
-                int currentPower = Length - 1;
+                int currentPower = Length - 2;
 
+
+                //find the binary
                 while (currentPower >= 0)
                 {
-                    if (denary >= Math.Pow(2, currentPower))
+                    if ((denary - Math.Pow(2, currentPower) >= 0))
                     {
-                        outputBinary = "1" + outputBinary;
+                        outputBinary += "1";
                         denary -= (int)Math.Pow(2, currentPower);
+                        currentPower -= 1;
                     }
                     else
                     {
-                        outputBinary = "0" + outputBinary;
+                        outputBinary += "0";
+                        currentPower -= 1;
                     }
-                    currentPower--;
                 }
 
-                BinaryNum = isNegative ? "1" + outputBinary : "0" + outputBinary;
 
+                if (isNegative == true) { outputBinary = "1" + outputBinary; } else { outputBinary = "0" + outputBinary; }
+
+                BinaryNum= outputBinary;
                 return true;
             }
             else
             {
                 return false;
             }
+            
+            
+            
         }
 
 
-
-
-
-        private bool setBinaryWithDenarySignAndMagnitude(int denary)
+            private bool setBinaryWithDenarySignAndMagnitude(int denary)
         {
             //if it will fit in an 8 bit sign and magnitude number
             if (denary >= -(Math.Pow(2, Length - 1) - 1) && denary <= (Math.Pow(2, Length - 1) - 1))
@@ -406,11 +412,9 @@ namespace BinaryFuncs
                         outputBinary += "0";
                         currentPower -= 1;
                     }
-
                 }
 
                 if (isNegative == true) { outputBinary = "1" + outputBinary; } else { outputBinary = "0" + outputBinary; }
-
 
                 BinaryNum = outputBinary;
                 return true;
