@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BinaryFuncs</id>
+    <version>1.2.0</version>
+    <title>Binary Functions</title>
+    <authors>EchoDevG</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>BinaryFuncsLogo.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/EchoDevG/BinaryFuncs</projectUrl>
+    <description>A class libary providing different types of binary numbers, and various functions for them.</description>
+    <releaseNotes>Added new experimental EBinary class, combining different formats of binary numbers into one class</releaseNotes>
+    <tags>binary C#</tags>
+    <repository type="git" url="https://github.com/EchoDevG/BinaryFuncs" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\garra\Documents\GitHub\BinaryFuncs\bin\Debug\net6.0\BinaryFuncs.dll" target="lib\net6.0\BinaryFuncs.dll" />
+    <file src="C:\Users\garra\Documents\GitHub\BinaryFuncs\BinaryFuncsLogo.png" target="\BinaryFuncsLogo.png" />
+    <file src="C:\Users\garra\Documents\GitHub\BinaryFuncs\README.md" target="\README.md" />
+  </files>
+</package>
