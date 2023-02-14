@@ -70,7 +70,7 @@ namespace Binary_Tests
             // Arrange
             int denary = 10;
             string initialBinary = new string('0', 8);
-            Binary nBinary = new Binary(initialBinary);
+            SignAndMagnitudeBinary nBinary = new SignAndMagnitudeBinary(initialBinary);
             string expectedBinary = "00001010";
 
             // Act
@@ -87,7 +87,7 @@ namespace Binary_Tests
             // Arrange
             int denary = -10;
             string initialBinary = new string('0', 8);
-            Binary nBinary = new Binary(initialBinary);
+            SignAndMagnitudeBinary nBinary = new SignAndMagnitudeBinary(initialBinary);
             string expectedBinary = "10001010";
 
             // Act
@@ -105,7 +105,7 @@ namespace Binary_Tests
             // Arrange
             int denary = 0;
             string initialBinary = new string('1', 8);
-            Binary nBinary = new Binary(initialBinary);
+            SignAndMagnitudeBinary nBinary = new SignAndMagnitudeBinary(initialBinary);
             string expectedBinary = "00000000";
 
             // Act
@@ -127,7 +127,7 @@ namespace Binary_Tests
             // Arrange
             int denary = 10;
             string initialBinary = new string('0', 8);
-            Binary nBinary = new Binary(initialBinary);
+            TwosComplimentBinary nBinary = new TwosComplimentBinary(initialBinary);
             string expectedBinary = "00001010";
 
             // Act
@@ -144,7 +144,7 @@ namespace Binary_Tests
             // Arrange
             int denary = -10;
             string initialBinary = new string('0', 8);
-            Binary nBinary = new Binary(initialBinary);
+            TwosComplimentBinary nBinary = new TwosComplimentBinary(initialBinary);
             string expectedBinary = "11110110";
 
             // Act
@@ -162,7 +162,7 @@ namespace Binary_Tests
             // Arrange
             int denary = 0;
             string initialBinary = new string('1', 8);
-            Binary nBinary = new Binary(initialBinary);
+            TwosComplimentBinary nBinary = new TwosComplimentBinary(initialBinary);
             string expectedBinary = "00000000";
 
             // Act
