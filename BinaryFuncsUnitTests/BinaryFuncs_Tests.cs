@@ -116,6 +116,38 @@ namespace Binary_Tests
             Assert.AreEqual(expectedBinary, actualBinary, "Conversion failed with denary being zero");
 
         }
+
+        [TestMethod]
+        public void ChangeSignFromPositive()
+        {
+            // Arrange
+            string initialBinary = "00001010";
+            SignAndMagnitudeBinary nBinary = new SignAndMagnitudeBinary(initialBinary);
+            string expectedBinary = "10001010";
+
+            // Act
+            nBinary.changeSign();
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Incorrectly changed the sign from +ve to -ve");
+        }
+
+        [TestMethod]
+        public void ChangeSignFromNegative()
+        {
+            // Arrange
+            string initialBinary = "10001010";
+            SignAndMagnitudeBinary nBinary = new SignAndMagnitudeBinary(initialBinary);
+            string expectedBinary = "00001010";
+
+            // Act
+            nBinary.changeSign();
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Incorrectly changed the sign from -ve to +ve");
+        }
     }
 
     [TestClass]
@@ -172,6 +204,38 @@ namespace Binary_Tests
             string actualBinary = nBinary.getBinary();
             Assert.AreEqual(expectedBinary, actualBinary, "Conversion failed with denary being zero");
 
+        }
+
+        [TestMethod]
+        public void ChangeSignFromPositive() 
+        {
+            // Arrange
+            string initialBinary = "00001010";
+            TwosComplimentBinary nBinary = new TwosComplimentBinary(initialBinary);
+            string expectedBinary = "11110110";
+
+            // Act
+            nBinary.changeSign();
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Incorrectly changed the sign from +ve to -ve");
+        }
+
+        [TestMethod]
+        public void ChangeSignFromNegative()
+        {
+            // Arrange
+            string initialBinary = "11110110";
+            TwosComplimentBinary nBinary = new TwosComplimentBinary(initialBinary);
+            string expectedBinary = "00001010";
+
+            // Act
+            nBinary.changeSign();
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Incorrectly changed the sign from -ve to +ve");
         }
     }
 
