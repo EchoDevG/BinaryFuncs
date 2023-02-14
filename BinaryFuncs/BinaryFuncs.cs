@@ -121,10 +121,11 @@ namespace BinaryFuncs
 
         public void changeSign()
         {
-            if (binary.Substring(0, 1) == "1")
-            { binary = "0" + binary.Substring(1, 7); }
-            else if (binary.Substring(0, 1) == "0")
-            { binary = "1" + binary.Substring(1, 7); }
+            if (binary.ToCharArray()[0] == '1')
+            { setBinary("0" + binary.Substring(1)); }
+            else if (binary.ToCharArray()[0] == '0')
+            { setBinary("1" + binary.Substring(1)); }
+            
         }
     }
 
