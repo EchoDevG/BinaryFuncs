@@ -23,6 +23,42 @@ namespace Binary_Tests
             string actualBinary = nBinary.getBinary();
             Assert.AreEqual(expectedBinary, actualBinary, "Conversion from denary is incorrect");
         }
+
+        [TestMethod]
+        public void SetWithDenaryNegative()
+        {
+            // Arrange
+            int denary = -10;
+            string initialBinary = new string('0', 8);
+            Binary nBinary = new Binary(initialBinary);
+            string expectedBinary = initialBinary;
+
+            // Act
+            nBinary.setBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Attempted conversion with negative denary");
+            
+        }
+
+        [TestMethod]
+        public void SetWithDenaryZero()
+        {
+            // Arrange
+            int denary = 0;
+            string initialBinary = new string('1', 8);
+            Binary nBinary = new Binary(initialBinary);
+            string expectedBinary = "00000000";
+
+            // Act
+            nBinary.setBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Conversion failed with denary being zero");
+
+        }
     }
 
     [TestClass]
@@ -44,6 +80,42 @@ namespace Binary_Tests
             string actualBinary = nBinary.getBinary();
             Assert.AreEqual(expectedBinary, actualBinary, "Conversion from denary is incorrect");
         }
+
+        [TestMethod]
+        public void SetWithDenaryNegative()
+        {
+            // Arrange
+            int denary = -10;
+            string initialBinary = new string('0', 8);
+            Binary nBinary = new Binary(initialBinary);
+            string expectedBinary = "10001010";
+
+            // Act
+            nBinary.setBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Incorrect conversion with negative denary");
+
+        }
+
+        [TestMethod]
+        public void SetWithDenaryZero()
+        {
+            // Arrange
+            int denary = 0;
+            string initialBinary = new string('1', 8);
+            Binary nBinary = new Binary(initialBinary);
+            string expectedBinary = "00000000";
+
+            // Act
+            nBinary.setBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Conversion failed with denary being zero");
+
+        }
     }
 
     [TestClass]
@@ -64,6 +136,42 @@ namespace Binary_Tests
             // Assert
             string actualBinary = nBinary.getBinary();
             Assert.AreEqual(expectedBinary, actualBinary, "Conversion from denary is incorrect");
+        }
+
+        [TestMethod]
+        public void SetWithDenaryNegative()
+        {
+            // Arrange
+            int denary = -10;
+            string initialBinary = new string('0', 8);
+            Binary nBinary = new Binary(initialBinary);
+            string expectedBinary = "11110110";
+
+            // Act
+            nBinary.setBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Incorrect conversion with negative denary");
+
+        }
+
+        [TestMethod]
+        public void SetWithDenaryZero()
+        {
+            // Arrange
+            int denary = 0;
+            string initialBinary = new string('1', 8);
+            Binary nBinary = new Binary(initialBinary);
+            string expectedBinary = "00000000";
+
+            // Act
+            nBinary.setBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.getBinary();
+            Assert.AreEqual(expectedBinary, actualBinary, "Conversion failed with denary being zero");
+
         }
     }
 
