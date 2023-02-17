@@ -247,6 +247,56 @@ namespace Binary_Tests
 namespace EBinary_Tests
 {
     [TestClass]
+    public class Standard
+    {
+
+        [TestMethod]
+        public void SetWithDenary()
+        {
+            // Arrange
+            int denary = 10;
+            int length = 8;
+            string initialBinary = new string('0', length);
+            EBinary nBinary = new EBinary(length, initialBinary, "TWOS_COMPLIMENT");
+            string expectedBinary = "00001010";
+
+            // Act
+            nBinary.SetBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.BinaryNum;
+            Assert.AreEqual(expectedBinary, actualBinary, "Conversion from denary is incorrect");
+            
+        }
+    }
+
+
+    [TestClass]
+    public class Sign_And_Magnitude
+    {
+
+        [TestMethod]
+        public void SetWithDenary()
+        {
+            // Arrange
+            int denary = 10;
+            int length = 8;
+            string initialBinary = new string('0', length);
+            EBinary nBinary = new EBinary(length, initialBinary, "TWOS_COMPLIMENT");
+            string expectedBinary = "00001010";
+
+            // Act
+            nBinary.SetBinaryWithDenary(denary);
+
+            // Assert
+            string actualBinary = nBinary.BinaryNum;
+            Assert.AreEqual(expectedBinary, actualBinary, "Conversion from denary is incorrect");
+
+        }
+    }
+
+
+    [TestClass]
     public class Twos_Compliment
     {
 

@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>BinaryFuncs</PackageId>
     <Title>Binary Functions</Title>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <Authors>EchoDevG</Authors>
     <Description>A class libary providing different types of binary numbers, and various functions for them.</Description>
     <PackageIcon>BinaryFuncsLogo.png</PackageIcon>
@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/EchoDevG/BinaryFuncs</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>binary;C#</PackageTags>
-    <PackageReleaseNotes>Fixed error with EBinary setting with denary</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed changeSign</PackageReleaseNotes>
     <PackageOutputPath>bin\Debug\</PackageOutputPath>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

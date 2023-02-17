@@ -1902,7 +1902,7 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "BinaryFuncs/1.2.1": {
+      "BinaryFuncs/1.2.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -6772,7 +6772,7 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "BinaryFuncs/1.2.1": {
+    "BinaryFuncs/1.2.2": {
       "type": "project",
       "path": "../BinaryFuncs/BinaryFuncs.csproj",
       "msbuildProject": "../BinaryFuncs/BinaryFuncs.csproj"
@@ -6780,7 +6780,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BinaryFuncs >= 1.2.1",
+      "BinaryFuncs >= 1.2.2",
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
