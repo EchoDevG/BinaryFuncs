@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BinaryFuncs/1.2.1": {
+      "BinaryFuncs/1.2.2": {
         "runtime": {
           "BinaryFuncs.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "BinaryFuncs/1.2.1": {
+    "BinaryFuncs/1.2.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

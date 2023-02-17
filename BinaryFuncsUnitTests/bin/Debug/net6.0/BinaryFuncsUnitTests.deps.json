@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "BinaryFuncsUnitTests/1.0.0": {
         "dependencies": {
-          "BinaryFuncs": "1.2.1",
+          "BinaryFuncs": "1.2.2",
           "MSTest.TestAdapter": "2.2.10",
           "MSTest.TestFramework": "2.2.10",
           "Microsoft.NET.Test.Sdk": "17.3.2",
@@ -1128,7 +1128,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "BinaryFuncs/1.2.1": {
+      "BinaryFuncs/1.2.2": {
         "runtime": {
           "BinaryFuncs.dll": {}
         }
@@ -1814,7 +1814,7 @@
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
-    "BinaryFuncs/1.2.1": {
+    "BinaryFuncs/1.2.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
